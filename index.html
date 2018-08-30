@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Austin Crain</title>
+	<meta charset="utf-8"> 
+	<!-- https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+	<link href="portfolio/css/style.css" rel="stylesheet"> <!-- Custom styles for this template -->
+</head>
+
+<body>
+	<div class="container">
+		<h1>Austin Crain</h1>
+		<div class="topnav">
+			<!-- <a class="active" href="#home">Home</a>
+			<a href="#news">News</a> 
+			<a href="#contact">Contact</a> -->
+			<div class="topnav-right" id="nav">
+				<a class="active" href="#portfolio" data-toggle="tab">Portfolio</a>
+				<a href="#resume" data-toggle="tab">Resume</a>
+				<a href="#about" data-toggle="tab">About Me</a>
+			</div>
+		</div>
+	</div>
+	
+<!-- data-spy="scroll" data-target=".navbar" data-offset="0">-->
+	<div id="demo" class="carousel <!--slide-->" <!--data-ride="carousel"-->
+
+		<!-- Indicators -->
+			<!--<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+
+		<!-- The slideshow -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<!--<a href="project5.html" style="">
+					<div class="zoom" onmouseover="imageShadow()" onmouseout="imageNone()" style="border-radius: 25px;">
+						<!-- vertically alligns words and pictures -->
+						<!--<div id="section1">
+						  <h2>Section 1</h2>
+						  <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+						</div>
+				   </div>
+				</a>-->
+				<article>
+					<img src="header-image2.png" id="picture2" onmouseover="imageShadow()" onmouseout="imageNone()" style="border-radius: 25px;">
+				</article>
+				<article>
+					<img src="header-image3.png" id="picture3" onmouseover="imageShadow()" onmouseout="imageNone()" style="border-radius: 25px;">
+				</article> <!-- need to use two separate sets of functions, can yuo be more elegant?  -->
+			</div>
+			<div class="carousel-item" id="resume">
+				<img src="portfolio/img/Resume_ATC_v12-1.jpg" alt="Resume" style="width: 70%; height: 70%;" class="center" >
+			</div>
+			<div class="carousel-item" id="about">
+				<a href="https://www.w3schools.com/howto/howto_css_portfolio_gallery.asp">
+					<img src="portfolio/img/ny.jpg" alt="New York">
+				</a>
+			</div>
+		</div>
+		<!-- https://fontawesome.com/v4.7.0/icons/  for facebook, linked in, and google -->
+		
+	  <!-- Left and right controls -
+		<a class="carousel-control-prev" href="#demo" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		
+		<a class="carousel-control-next" href="#demo" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>-->
+
+	</div>
+
+	<!-- <div class="carousel-item">
+          <section class="content-section-b">
+            <div class="modal-dialog">
+              <div class="row">
+                <div class="modal-dialogtwo resumeaboutpad">
+                  <!-- RESUME PICTURE  -->
+    <!--              <img class="img-fluid" src="portfolio/img/Tony's_Resume.jpg" style="max-width: 75%; display:block; margin:auto;">
+                </div>
+              </div>
+            </div>
+			
+            <!-- DOWNLOAD BUTTON  -->
+    <!--        <div class="row">
+              <div class="col-lg-12 text-center">
+                <li class="sliding-middle-out">
+                  <a href="portfolio/img/resume.pdf" download="Tony's Resume.pdf">Download</a>
+                </li>
+              </div>
+            </div>
+          </section>
+
+          <!--  ///////////////////  FOOTER/CONTACT  ///////////////////  -->
+    <!--      <aside class="banner ">
+            <div class="row ">
+              <div class="col-lg-12 text-center">
+                <a href="mailto:tonychan96@gmail.com" target="_blank" class="btn-social btn-lg"><i class="fa fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/tony-chan-206086115/" target="_blank" class="btn-social btn-lg"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/GMTChan" target="_blank" class="btn-social btn-lg"><i class="fa fa-github"></i></a>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-lg-12 text-center">
+				<p class="lead copyright">© 2018 Austin Chan</p>
+              </div>
+            </div>
+          </aside>
+        </div> 
+		-->
+	<!-- <script src="vendor/popper/popper.min.js "></script> -->
+	<script>
+		$('.carousel').carousel({
+			interval: false
+		}); 
+		$("#nav a").on("click", function()
+		{
+			$("#nav").find(".active").removeClass("active");
+			$(this).addClass("active");
+			var curPos = $(this).index();
+			$("#demo").carousel(curPos);
+		});
+		function imageShadow() 
+		{
+			var myimage = document.getElementById("picture2");
+			myimage.style.boxShadow = "0 5px 10px black";
+			
+		}
+		
+		function imageNone() 
+		{
+			var myimage = document.getElementById("picture2");
+			myimage.style.boxShadow = "none";
+			
+		}
+	</script>
+</body>
+</html>

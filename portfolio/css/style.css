@@ -1,0 +1,132 @@
+/*
+ * OUTER CSS LAYER
+ */
+body, html {
+  width: 98%;
+  height: 98%;
+}
+
+body {
+	background-color: #E0E0E0;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* Make the image fully responsive */
+  .carousel-inner img {
+      width: 90%;
+      height: 90%;
+  }
+  
+/*  Fix left having no padding on slide show  */
+.carousel-item 
+{
+    padding: 0px 0px 0px 51px; /* first number controls spacing between header and first image */
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* BOX HOVER EFFECT */
+.box {
+  position: relative;
+  display: inline-block;
+  width: 800px;
+  height: 310px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.box::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.box:hover {
+  -webkit-transform: scale(1.02, 1.02);
+  transform: scale(1.02, 1.02);
+}
+.box:hover::after {
+    opacity: 1;
+}
+
+.zoom {
+    padding: 50px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+	
+	border-radius: 25px;
+    background: white;
+    /*padding: 20px; 
+    height: 150px; */
+	color: black; 
+	text-decoration: none;
+}
+
+.zoom:hover {
+    transform: scale(1.02, 1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	text-decoration: none;
+}
+
+body {
+	background:#e2e2e2;
+	color:#1c1c1c;
+	font-size:2em;
+}
+article {
+	width:1200px;
+	margin:0 auto;
+	height:800px;
+	padding:20px;
+	background-color: #E0E0E0;
+}
