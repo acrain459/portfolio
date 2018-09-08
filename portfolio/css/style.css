@@ -139,14 +139,18 @@ img {
 }
 
 .square {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
 }
 
 /* https://stackoverflow.com/questions/10085723/twitter-bootstrap-add-top-space-between-rows */
 
 .top7 { 
 	margin-top:15px; 
+}
+
+.top72 { 
+	margin-top:20px; 
 }
 
 
