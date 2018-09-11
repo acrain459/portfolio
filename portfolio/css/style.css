@@ -3,7 +3,7 @@
  */
 body, html {
   width: 98%;
-  height: 98%;
+  height: 100%;
 }
 
 body {
@@ -126,7 +126,7 @@ body {
 article {
 	width:1200px;
 	margin:0 auto;
-	height:800px;
+	height:1000px;
 	padding:20px;
 	background-color: #E0E0E0;
 }
